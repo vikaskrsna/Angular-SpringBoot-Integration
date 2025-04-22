@@ -1,7 +1,7 @@
-package com.sergio.crud.backend.mappers;
+package com.crud.backend.mappers;
 
-import com.sergio.crud.backend.dtos.MobileDto;
-import com.sergio.crud.backend.entities.Mobile;
+import com.crud.backend.dtos.MobileDto;
+import com.crud.backend.entities.Mobile;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

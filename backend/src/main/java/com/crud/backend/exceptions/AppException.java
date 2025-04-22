@@ -1,4 +1,4 @@
-package com.sergio.crud.backend.exceptions;
+package com.crud.backend.exceptions;
 
 import org.springframework.http.HttpStatus;
 

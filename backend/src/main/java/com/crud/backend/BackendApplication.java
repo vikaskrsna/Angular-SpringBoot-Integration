@@ -1,4 +1,4 @@
-package com.sergio.crud.backend;
+package com.crud.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,3 +1,3 @@
-package com.sergio.crud.backend.dtos;
+package com.crud.backend.dtos;
 
 public record ErrorDto (String message) { }

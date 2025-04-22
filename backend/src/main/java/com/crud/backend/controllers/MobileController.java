@@ -1,7 +1,7 @@
-package com.sergio.crud.backend.controllers;
+package com.crud.backend.controllers;
 
-import com.sergio.crud.backend.dtos.MobileDto;
-import com.sergio.crud.backend.services.MobileService;
+import com.crud.backend.dtos.MobileDto;
+import com.crud.backend.services.MobileService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

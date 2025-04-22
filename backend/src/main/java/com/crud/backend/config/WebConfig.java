@@ -1,4 +1,4 @@
-package com.sergio.crud.backend.config;
+package com.crud.backend.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

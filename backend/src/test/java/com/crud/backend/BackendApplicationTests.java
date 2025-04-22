@@ -1,4 +1,4 @@
-package com.sergio.crud.backend;
+package com.crud.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

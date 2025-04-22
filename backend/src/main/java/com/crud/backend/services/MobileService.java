@@ -1,10 +1,10 @@
-package com.sergio.crud.backend.services;
+package com.crud.backend.services;
 
-import com.sergio.crud.backend.dtos.MobileDto;
-import com.sergio.crud.backend.entities.Mobile;
-import com.sergio.crud.backend.exceptions.AppException;
-import com.sergio.crud.backend.mappers.MobileMapper;
-import com.sergio.crud.backend.repositories.MobileRepository;
+import com.crud.backend.dtos.MobileDto;
+import com.crud.backend.entities.Mobile;
+import com.crud.backend.exceptions.AppException;
+import com.crud.backend.mappers.MobileMapper;
+import com.crud.backend.repositories.MobileRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;

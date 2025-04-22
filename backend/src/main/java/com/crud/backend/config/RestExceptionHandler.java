@@ -1,7 +1,7 @@
-package com.sergio.crud.backend.config;
+package com.crud.backend.config;
 
-import com.sergio.crud.backend.dtos.ErrorDto;
-import com.sergio.crud.backend.exceptions.AppException;
+import com.crud.backend.dtos.ErrorDto;
+import com.crud.backend.exceptions.AppException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

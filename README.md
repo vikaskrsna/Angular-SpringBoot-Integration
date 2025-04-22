@@ -2,7 +2,7 @@
 
 ## Backend
 
-The backend is made with the latest Spring Boot version, Java 17, JPA and a Postgres access.
+The backend is made with the latest Spring Boot version, Java 17, MongoDB Non releational Database.
 
 I've also added Mapstruct and Lombok as code generators to create the mappers and builders.
 

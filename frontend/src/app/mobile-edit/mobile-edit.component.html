@@ -1,23 +1,23 @@
-<form class="vehicle-form" (ngSubmit)="onSubmit()">
+<form class="mobile-form" (ngSubmit)="onSubmit()">
 
-  <mat-form-field class="vehicle-full-width">
+  <mat-form-field class="mobile-full-width">
     <mat-label>Brand</mat-label>
-    <input name="brand" [(ngModel)]="vehicle.brand" required matInput>
+    <input name="brand" [(ngModel)]="mobile.brand" required matInput>
   </mat-form-field>
 
-  <mat-form-field class="vehicle-full-width">
+  <mat-form-field class="mobile-full-width">
     <mat-label>Model</mat-label>
-    <input name="model" [(ngModel)]="vehicle.model" required matInput>
+    <input name="model" [(ngModel)]="mobile.model" required matInput>
   </mat-form-field>
 
-  <mat-form-field class="vehicle-full-width">
+  <mat-form-field class="mobile-full-width">
     <mat-label>Year</mat-label>
-    <input name="year" [(ngModel)]="vehicle.year" required matInput>
+    <input name="year" [(ngModel)]="mobile.year" required matInput>
   </mat-form-field>
 
-  <mat-form-field class="vehicle-full-width">
+  <mat-form-field class="mobile-full-width">
     <mat-label>Color</mat-label>
-    <mat-select name="color" required [(ngModel)]="vehicle.color">
+    <mat-select name="color" required [(ngModel)]="mobile.color">
       <mat-option value="White">White</mat-option>
       <mat-option value="Black">Black</mat-option>
       <mat-option value="Gray">Gray</mat-option>

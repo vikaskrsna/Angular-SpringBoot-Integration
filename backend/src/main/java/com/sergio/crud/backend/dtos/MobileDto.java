@@ -14,7 +14,7 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-public class VehicleDto {
+public class MobileDto {
 
     private String id;
 

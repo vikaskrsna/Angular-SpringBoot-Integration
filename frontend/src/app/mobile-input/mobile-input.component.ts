@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {FormsModule } from '@angular/forms';
+import { NgForm, FormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import {MatCheckboxModule} from '@angular/material/checkbox';
@@ -11,12 +11,12 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 
-import {Vehicle} from './../vehicle';
+import {Mobile} from '../mobile';
 
 @Component({
-  selector: 'app-vehicle-edit',
-  templateUrl: './vehicle-edit.component.html',
-  styleUrls: ['./vehicle-edit.component.css'],
+  selector: 'app-mobile-input',
+  templateUrl: './mobile-input.component.html',
+  styleUrls: ['./mobile-input.component.css'],
   standalone: true,
   imports: [MatFormFieldModule,
             MatInputModule,
@@ -29,20 +29,22 @@ import {Vehicle} from './../vehicle';
             MatCheckboxModule,
             MatRadioModule],
 })
-export class VehicleEditComponent {
+export class MobileInputComponent {
 
-   @Input() vehicle: Vehicle = new Vehicle("", "", "", 0, "");
+  @ViewChild('mobileForm') mobileForm!: NgForm;
 
-    @Output() editDataEvent = new EventEmitter();
+  @Output() newDataEvent = new EventEmitter();
 
-    constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-    onSubmit(): void {
-      this.http.post<Vehicle>(
-        "http://localhost:8080/vehicles",
-        this.vehicle
-      ).subscribe(data => {
-        this.editDataEvent.emit(data);
-        });
-    }
+  onSubmit(): void {
+    this.http.post<Mobile>(
+      "http://localhost:8080/mobiles",
+      this.mobileForm.value
+    ).subscribe(data => {
+      this.newDataEvent.emit(data);
+      });
+  }
+
+
 }

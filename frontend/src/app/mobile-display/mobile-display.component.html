@@ -1,0 +1,12 @@
+<p>
+  <mat-card class="mobile-card">
+    <mat-card-header>
+      <mat-card-title>{{mobile.brand}} {{mobile.model}}</mat-card-title>
+      <mat-card-subtitle>{{mobile.year}} {{mobile.color}}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions align="end">
+      <button mat-button (click)="editItemEvent.emit(mobile.id)">Edit</button>
+      <button mat-button (click)="removeItemEvent.emit(mobile.id)">Remove</button>
+    </mat-card-actions>
+  </mat-card>
+</p>

@@ -1,12 +1,12 @@
 <div class="main">
-  <h1>Add a new vehicle</h1>
+  <h1>Add a new mobile</h1>
 
-  <app-vehicle-input
+  <app-mobile-input
                       (newDataEvent)="appendData($event)"/>
 
-  <h2>My vehicles list</h2>
-  <app-vehicle-wrapper *ngFor="let vehicle of vehicles"
+  <h2>My mobiles list</h2>
+  <app-mobile-wrapper *ngFor="let mobile of mobiles"
                        (removeItemEvent)="removeItem($event)"
-                       [vehicle]="vehicle"
+                       [mobile]="mobile"
   />
 </div>

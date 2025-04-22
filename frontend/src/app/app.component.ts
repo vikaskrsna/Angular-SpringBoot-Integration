@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 
-import {Vehicle} from './vehicle';
+import {Mobile} from './mobile';
 
 @Component({
   selector: "app-root",
@@ -10,24 +10,24 @@ import {Vehicle} from './vehicle';
 })
 export class AppComponent {
 
-  vehicles: Vehicle[] = [];
+  mobiles: Mobile[] = [];
 
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<Vehicle[]>(
-      "http://localhost:8080/vehicles"
-    ).subscribe(data => this.vehicles = data);
+    this.http.get<Mobile[]>(
+      "http://localhost:8080/mobiles"
+    ).subscribe(data => this.mobiles = data);
   }
 
-  appendData(newVehicle: any): void {
-    this.vehicles.push(newVehicle);
+  appendData(newMobile: any): void {
+    this.mobiles.push(newMobile);
   }
 
-  removeItem(vehicleId: string): void {
+  removeItem(mobileId: string): void {
     this.http.delete(
-      "http://localhost:8080/vehicles/" + vehicleId,
-    ).subscribe(data => this.vehicles = this.vehicles.filter((vehicle: Vehicle) => vehicle.id != vehicleId));
+      "http://localhost:8080/mobiles/" + mobileId,
+    ).subscribe(data => this.mobiles = this.mobiles.filter((mobile: Mobile) => mobile.id != mobileId));
   }
 
 }

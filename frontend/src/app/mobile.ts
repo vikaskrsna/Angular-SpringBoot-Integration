@@ -1,4 +1,4 @@
-export class Vehicle {
+export class Mobile {
   constructor(
   public id: string,
   public brand: string,

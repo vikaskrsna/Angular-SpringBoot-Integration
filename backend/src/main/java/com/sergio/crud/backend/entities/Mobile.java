@@ -16,8 +16,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Getter
 @Setter
-@Document(collection = "vehicles")
-public class Vehicle {
+@Document(collection = "mobiles")
+public class Mobile {
 
     @Id
     private String id;

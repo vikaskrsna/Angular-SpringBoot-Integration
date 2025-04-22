@@ -4,10 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { VehicleInputComponent } from './vehicle-input/vehicle-input.component';
-import { VehicleDisplayComponent } from './vehicle-display/vehicle-display.component';
-import { VehicleEditComponent } from './vehicle-edit/vehicle-edit.component';
-import { VehicleWrapperComponent } from './vehicle-wrapper/vehicle-wrapper.component';
+import { MobileInputComponent } from './mobile-input/mobile-input.component';
+import { MobileDisplayComponent } from './mobile-display/mobile-display.component';
+import { MobileEditComponent } from './mobile-edit/mobile-edit.component';
+import { MobileWrapperComponent } from './mobile-wrapper/mobile-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +17,10 @@ import { VehicleWrapperComponent } from './vehicle-wrapper/vehicle-wrapper.compo
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    VehicleInputComponent,
-    VehicleDisplayComponent,
-    VehicleEditComponent,
-    VehicleWrapperComponent,
+    MobileInputComponent,
+    MobileDisplayComponent,
+    MobileEditComponent,
+    MobileWrapperComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

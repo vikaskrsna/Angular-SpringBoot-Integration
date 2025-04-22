@@ -1,10 +1,10 @@
 <p>
-  <app-vehicle-edit *ngIf="editable == true"
+  <app-mobile-edit *ngIf="editable == true"
                     (editDataEvent)="handleSaveEdition($event)"
-                    [vehicle]="vehicle"/>
+                    [mobile]="mobile"/>
 
-  <app-vehicle-display *ngIf="editable == false"
+  <app-mobile-display *ngIf="editable == false"
                      (removeItemEvent)="removeItemEvent.emit($event)"
                      (editItemEvent)="handleEditClick()"
-                     [vehicle]="vehicle"/>
+                     [mobile]="mobile"/>
 </p>

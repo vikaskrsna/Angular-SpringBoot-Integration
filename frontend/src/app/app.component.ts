@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import {Mobile} from './mobile';
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-root",
@@ -10,13 +11,19 @@ import {Mobile} from './mobile';
 export class AppComponent {
 
   mobiles: Mobile[] = [];
+  showForm =false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private router: Router) {}
 
   ngOnInit(): void {
     this.http.get<Mobile[]>(
       "http://localhost:8080/mobiles"
     ).subscribe(data => this.mobiles = data);
+  }
+
+  addNewPhone(): void {
+    this.showForm=true
+    this.router.navigate(['/input']);
   }
 
   appendData(newMobile: any): void {

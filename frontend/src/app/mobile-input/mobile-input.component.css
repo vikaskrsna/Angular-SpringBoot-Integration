@@ -1,9 +1,14 @@
 .mobile-form {
-  min-width: 50px;
-  max-width: 300px;
-  width: 100%;
+  padding: 20px;
+  margin: auto;
+  width: 50%;
 }
 
 .mobile-full-width {
   width: 100%;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px; /* Adjust as needed */
 }

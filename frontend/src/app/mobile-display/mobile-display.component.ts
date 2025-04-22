@@ -14,7 +14,6 @@ import {Mobile} from '../mobile';
 export class MobileDisplayComponent {
 
   @Input() mobile: Mobile = new Mobile("", "", "", 0, "");
-
   @Output() removeItemEvent = new EventEmitter();
   @Output() editItemEvent = new EventEmitter();
 }

@@ -12,6 +12,7 @@ import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
 
 import {Mobile} from '../mobile';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-input',
@@ -35,7 +36,7 @@ export class MobileInputComponent {
 
   @Output() newDataEvent = new EventEmitter();
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient,private router: Router) {}
 
   onSubmit(): void {
     this.http.post<Mobile>(
@@ -44,6 +45,11 @@ export class MobileInputComponent {
     ).subscribe(data => {
       this.newDataEvent.emit(data);
       });
+    this.router.navigate(['/']);
+  }
+
+  exitEdit(): void {
+    this.router.navigate(['/']);  
   }
 
 

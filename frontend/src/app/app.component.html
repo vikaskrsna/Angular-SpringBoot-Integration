@@ -1,12 +1,13 @@
 <div class="main">
-  <h1>Add a new mobile</h1>
-
-  <app-mobile-input
-                     (newDataEvent)="appendData($event)"/>
-
-  <h2>My mobiles list</h2>
-  <app-mobile-wrapper *ngFor="let mobile of mobiles"
-                       (removeItemEvent)="removeItem($event)"
-                       [mobile]="mobile"
-  />
+  <!--<h2>Add a new mobile</h2>
+  <app-mobile-input (newDataEvent)="appendData($event)"/> -->
+  <div *ngIf="!showForm" class="display-list">
+    <button type="submit" class="add-btn-form" mat-raised-button (click)="addNewPhone()" color="primary">Add
+      Mobile</button>
+    <h2>My mobiles list</h2>
+    <app-mobile-wrapper *ngFor="let mobile of mobiles" (removeItemEvent)="removeItem($event)" [mobile]="mobile" />
+  </div>
+  <div class="container" *ngIf="showForm">
+    <router-outlet></router-outlet>
+  </div>
 </div>

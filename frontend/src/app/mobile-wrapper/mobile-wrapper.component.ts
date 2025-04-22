@@ -5,6 +5,7 @@ import { MobileDisplayComponent } from '../mobile-display/mobile-display.compone
 import { MobileEditComponent } from '../mobile-edit/mobile-edit.component';
 
 import {Mobile} from '../mobile';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-wrapper',

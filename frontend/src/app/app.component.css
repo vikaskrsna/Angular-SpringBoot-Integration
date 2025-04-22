@@ -3,3 +3,30 @@
   margin: auto;
   width: 50%;
 }
+
+.btn {
+  background-color: #4f46e5; /* Indigo */
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: #4338ca; /* Darker indigo */
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  background-color: #3730a3;
+  transform: translateY(0);
+}
+
+.example-button-row {
+  display: table-cell;
+  max-width: 600px;
+}

@@ -8,6 +8,7 @@ import { MobileInputComponent } from './mobile-input/mobile-input.component';
 import { MobileDisplayComponent } from './mobile-display/mobile-display.component';
 import { MobileEditComponent } from './mobile-edit/mobile-edit.component';
 import { MobileWrapperComponent } from './mobile-wrapper/mobile-wrapper.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { MobileWrapperComponent } from './mobile-wrapper/mobile-wrapper.componen
     MobileDisplayComponent,
     MobileEditComponent,
     MobileWrapperComponent,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

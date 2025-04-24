@@ -1,5 +1,6 @@
-
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/carmodel
+      host: mongodb
+      port: 27017
+      database: carmodel

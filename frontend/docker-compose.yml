@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/your-db-name
+      - SPRING_DATA_MONGODB_URI=mongodb://mongo:27017/mobilemodel
 
   angular-app:
     image: vikasespire/angular:0.0.7

@@ -3,4 +3,4 @@ spring:
     mongodb:
       host: mongodb
       port: 27017
-      database: carmodel
+      database: mobilemodel

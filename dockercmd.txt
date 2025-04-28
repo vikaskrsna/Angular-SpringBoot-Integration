@@ -7,7 +7,7 @@ sudo docker exec -it mongodb mongosh -u admin -p password //for authentication
 
 sudo docker exec -it mongodb mongosh //for without authentication
 
-sudo docker push vikasespire/angular:0.0.1
+sudo docker push vikasespire/angular:0.0.1 //Stable version for angular
 
 sudo docker push vikasespire/springboot:0.0.4
 

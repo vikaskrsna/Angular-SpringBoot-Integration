@@ -17,7 +17,7 @@ export class AppComponent {
 
   ngOnInit(): void {
     this.http.get<Mobile[]>(
-      "http://localhost:8080/mobiles"
+      "http://springboot-service:8080/mobiles"
     ).subscribe(data => this.mobiles = data);
   }
 
@@ -32,7 +32,7 @@ export class AppComponent {
 
   removeItem(mobileId: string): void {
     this.http.delete(
-      "http://localhost:8080/mobiles/" + mobileId,
+      "http://springboot-service:8080/mobiles/" + mobileId,
     ).subscribe(data => this.mobiles = this.mobiles.filter((mobile: Mobile) => mobile.id != mobileId));
   }
 

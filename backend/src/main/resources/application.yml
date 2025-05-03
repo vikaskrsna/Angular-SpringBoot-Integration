@@ -1,6 +1,11 @@
 spring:
+  application:
+    name: springboot-service
   data:
     mongodb:
-      host: mongodb
+      host: '${MONGO_HOST}'
+      database: '${MONGO_DB}'
       port: 27017
-      database: carmodel
+      username: '${MONGO_USERNAME}'
+      password: '${MONGO_PASSWORD}'
+

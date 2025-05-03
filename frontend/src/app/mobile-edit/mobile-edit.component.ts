@@ -39,7 +39,7 @@ export class MobileEditComponent {
 
     onSubmit(): void {
       this.http.post<Mobile>(
-        "http://localhost:8080/mobiles",
+        "http://springboot-service:8080/mobiles",
         this.mobile
       ).subscribe(data => {
         this.editDataEvent.emit(data);

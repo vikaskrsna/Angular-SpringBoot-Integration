@@ -40,7 +40,7 @@ export class MobileInputComponent {
 
   onSubmit(): void {
     this.http.post<Mobile>(
-      "http://localhost:8080/mobiles",
+      "http://springboot-service:8080/mobiles",
       this.mobileForm.value
     ).subscribe(data => {
       this.newDataEvent.emit(data);
